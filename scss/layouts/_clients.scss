@@ -1,0 +1,36 @@
+/*SECTION CLIENTS*/
+
+.clients__list {
+@media screen and (min-width: 480px){
+    display: flex;
+    flex-wrap: wrap;
+    --cards-item: 2;}
+
+@media screen and (min-width: 768px){
+    --cards-item: 3;}
+
+@media screen and (min-width: 1200px){
+    --cards-item: 6;}
+}
+
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 29px;
+    color: $soc-icon;
+    border: 1px solid $soc-icon;
+    border-radius: 4px;
+    transition: color $transition-effect, border $transition-effect;
+
+&:hover, &:focus{
+    color: $accent-color;
+    border: 1px solid $accent-color;;    
+    }
+}
+
+.clients__icon{
+    display: block;
+    content: '';
+    fill: currentColor;
+}

@@ -1,0 +1,20 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+@include mq(desk) {
+    padding-top: 94px;
+    padding-bottom: 94px;}
+}       
+
+.section__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    margin-bottom: 50px;
+
+@include mq(desk){
+   font-size: 36px;}
+}
