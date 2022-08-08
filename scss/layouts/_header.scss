@@ -5,12 +5,14 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid $border;}
+    border-bottom: 1px solid $border;
+@include mq(mob-only){
+    position: relative;
+}
+}
 
 .header__container{
-@media screen and (min-width:480px) {
-    align-items: center;}
-@media screen and (min-width:768px) {
+@include mq(tab){
     display: flex;
     align-items: center;}
 }

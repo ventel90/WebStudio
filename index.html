@@ -35,6 +35,57 @@
 					</li>
 					<li class="site-nav__item"><a href="#contacts" class="site-nav__link link">Контакты</a></li>
 				</ul>
+				<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+					<svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+						<use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+						<use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+					</svg>
+				</button>
+				<!-- Мобильное меню -->
+				<div class="menu-container" id="menu-container" data-menu>
+					<div class="mob-nav">
+						<ul class="list mob-nav__list">
+							<li class="mob-nav__item">
+								<a href="./index.html" class="mob-nav__link mob-nav__link--active link">Студия</a>
+							</li>
+							<li class="mob-nav__item">
+								<a href="./portfolio.html" class="mob-nav__link link">Портфолио</a>
+							</li>
+							<li class="mob-nav__item"><a href="#contacts" class="mob-nav__link link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mob-contacts">
+						<ul class="list mob-contacts__list">
+							<li class="mob-contacts__item">
+								<a href="tel:+380961111111" class="mob-contacts__link link tel">
+									+38 096 111 11 11
+								</a>
+							</li>
+							<li class="mob-contacts__item">
+								<a href="mailto:info@devstudio.com" class="mob-contacts__link link e-mail">
+									info@devstudio.com
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mob-socials">
+						<ul class="mob-socials__list list">
+							<li class="mob-socials__item ">
+								<a class="mob-socials__link link" href="" target="_blank" rel="noreferrer noopener">Instagram</a>
+							</li>
+							<li class="mob-socials__item ">
+								<a class="mob-socials__link link" href="" target="_blank" rel="noreferrer noopener">Twitter</a>
+							</li>
+							<li class="mob-socials__item">
+								<a class="mob-socials__link link" href="" target="_blank" rel="noreferrer noopener">Facebook</a>
+							</li>
+							<li class="mob-socials__item">
+								<a class="mob-socials__link link" href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 			<ul class="list nav-contacts">
 				<li class="nav-contacts__item">
@@ -417,7 +468,7 @@
 		</div>
 	</footer>
 
-	<!-- Модальное окно-->
+	<!-- Модальное окно -->
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
 			<form class="modal-form">
@@ -465,6 +516,8 @@
 			</form>
 		</div>
 	</div>
+
+	
 	<script src="./js/subscription.js"></script>
 	<script src="./js/modal.js"></script>
 	<script src="./js/menu.js"></script>
