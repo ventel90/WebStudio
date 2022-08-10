@@ -1,6 +1,7 @@
 /*FILTER BTNS*/
 .filters {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
 }
@@ -28,4 +29,8 @@
     color: $white;
     background-color: $accent-color;
     box-shadow: $box-shadow-filt-but;}
+
+@include mq(mob-only){
+    margin-bottom: 15px;
+}
 }

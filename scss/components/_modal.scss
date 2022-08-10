@@ -9,6 +9,7 @@
     z-index: 1;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity $transition-effect, visibility $transition-effect;
+    overflow-y: scroll;
 }
 
 .is-hidden {
@@ -25,12 +26,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
+    max-width: 450px;
     padding: 40px;
     background: $white;
     box-shadow: $box-shadow-modal;
     border-radius: 4px;
     transition: transform $transition-effect;
+@include mq(desk){
+    max-width: 528px;}
 }
 
 .close-btn {
@@ -70,9 +73,12 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: $primary-color;
+@include mq(desk){
+    line-height: 1.15;
+}
 }
 
 .modal-form__label {
@@ -153,6 +159,15 @@
     justify-content: center;
     margin-bottom: 30px;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+@include mq(desk){
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 }
 
 .modal-form__link {

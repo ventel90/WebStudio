@@ -13,19 +13,31 @@
 }
 
 .footer__list {
-@include mq(tab){
+@include mq(tab-only){
     display: flex;
-    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
 }
-    
+@include mq(desk){
+    display: flex;
+    gap: 70px;
+    align-items: baseline;}
+}
+
+.footer__item{
+@include mq(desk){
+    &:last-child {
+    margin-left: auto;}}
 }
 
 .footer__logo {
     margin-bottom: 20px;
     display: inline-block;
-@include mq(mob-only){
-    padding: 0;}
+@include mq(noDesk){
+    padding: 0;
+    margin-left: 44px;
+    margin-right: 0;}
 }
 
 .footer-follow {
@@ -40,6 +52,10 @@
 .adress {
     color: $address-color;
     font-style: inherit;
+@include mq (tab-only){
+    margin-right: 165px;
+    margin-bottom: 60px;
+}
 }
 
 .street {
@@ -53,6 +69,9 @@
 .footer-contacts{
 @include mq(mob-only){
     margin-bottom: 60px;}
+@include mq(tab-only){
+    text-align: center;
+}
 }
 
 .footer-contacts__item{
@@ -68,19 +87,20 @@
 
 .subscription__follow {
     display: block;
-    margin-top: 60px;
     margin-bottom: 20px;
     color: $white;
+@include mq(mob-only){
+    margin-top: 60px;}
 }
 
 .subscribe-form {
-@include mq(tab){
-    display: flex;
-    align-items: center;}
+    display: block;
+    align-items: center;
+@include mq(desk){
+    display: flex;}
 }
 
 .subscribe-form__input {
-    max-width: 450px;
     height: 50px;
     font-weight: 400;
     font-size: 16px;
@@ -88,7 +108,6 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: $address-color;
-    margin-bottom: 20px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
@@ -99,11 +118,17 @@
     background-color: inherit;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @include mq(mob){
-    width: 100%;}
+    max-width: 450px;
+    margin-bottom: 20px;}
+
+@include mq(tab-only){
+    width: 450px;}
+
 @include mq(desk){
-    width: 358px;
+    max-width: 358px;
     margin-right: 12px;
-}
+    margin-bottom: 0;}
+
 &:hover, &:focus{
     border-color: $accent-color;}
 }
