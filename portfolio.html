@@ -28,7 +28,8 @@
 			<div class="container header__container">
 				<nav class="site-nav">
 					<a href="./index.html" class="link logo">
-						Web<span class="logo__black">Studio</span>
+						Web
+						<span class="logo__black">Studio</span>
 					</a>
 					<ul class="list site-nav__list">
 						<li class="site-nav__item">
@@ -39,7 +40,13 @@
 						</li>
 						<li class="site-nav__item"><a href="#contacts" class="site-nav__link link">Контакты</a></li>
 					</ul>
-					<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+					<button
+						type="button"
+						class="menu-button"
+						aria-expanded="false"
+						aria-controls="menu-container"
+						data-menu-button
+					>
 						<svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
 							<use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
 							<use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
@@ -56,30 +63,25 @@
 									<li class="mob-nav__item">
 										<a href="./portfolio.html" class="mob-nav__link mob-nav__link--active link">Портфолио</a>
 									</li>
-									<li class="mob-nav__item"><a href="#contacts" class="mob-nav__link link">Контакты</a>
-									</li>
+									<li class="mob-nav__item"><a href="#contacts" class="mob-nav__link link">Контакты</a></li>
 								</ul>
 							</div>
 							<div class="mob-contacts">
 								<ul class="list mob-contacts__list">
 									<li class="mob-contacts__item">
-										<a href="tel:+380961111111" class="mob-contacts__link link tel">
-											+38 096 111 11 11
-										</a>
+										<a href="tel:+380961111111" class="mob-contacts__link link tel">+38 096 111 11 11</a>
 									</li>
 									<li class="mob-contacts__item">
-										<a href="mailto:info@devstudio.com" class="mob-contacts__link link e-mail">
-											info@devstudio.com
-										</a>
+										<a href="mailto:info@devstudio.com" class="mob-contacts__link link e-mail">info@devstudio.com</a>
 									</li>
 								</ul>
 							</div>
 							<div class="mob-socials">
 								<ul class="mob-socials__list list">
-									<li class="mob-socials__item ">
+									<li class="mob-socials__item">
 										<a class="mob-socials__link link" href="" target="_blank" rel="noreferrer noopener">Instagram</a>
 									</li>
-									<li class="mob-socials__item ">
+									<li class="mob-socials__item">
 										<a class="mob-socials__link link" href="" target="_blank" rel="noreferrer noopener">Twitter</a>
 									</li>
 									<li class="mob-socials__item">
@@ -115,6 +117,7 @@
 		</header>
 
 		<!-- Портфолио -->
+
 		<main>
 			<section class="section portfolio">
 				<div class="container">
@@ -134,7 +137,24 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-01.jpg" alt="Технокряк" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-01@1x-450.jpg 450w, ./images/portfolio/img-01@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-01@1x-768.jpg 354w, ./images/portfolio/img-01@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-01@1x-1200.jpg 370w, ./images/portfolio/img-01@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img src="./images/portfolio/img-01-450.jpg" alt="Технокряк" width="450" height="294" />
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -149,7 +169,27 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-02.jpg" alt="Постер" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-02@1x-450.jpg 450w, ./images/portfolio/img-02@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source srcset="./images/portfolio/img-02@1x-768.jpg 354w, ./images/portfolio/img-02@2x-768.jpg 708w"
+											media="(max-width: 1199px)" 
+											sizes="(min-width: 768px) 354px, 100vw" />
+										<source
+											srcset="./images/portfolio/img-02@1x-1200.jpg 370w, ./images/portfolio/img-02@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img
+											src="./images/portfolio/img-02-450.jpg"
+											alt="New Orlean vs Golden Star"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -164,7 +204,24 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-03.jpg" alt="Ресторан" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-03@1x-450.jpg 450w, ./images/portfolio/img-03@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-03@1x-768.jpg 354w, ./images/portfolio/img-03@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-03@1x-1200.jpg 370w, ./images/portfolio/img-03@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img src="./images/portfolio/img-03-450.jpg" alt="Ресторан Seafood" width="450" height="294" />
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -179,7 +236,24 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-04.jpg" alt="Прайм" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-04@1x-450.jpg 450w, ./images/portfolio/img-04@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-04@1x-768.jpg 354w, ./images/portfolio/img-04@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-04@1x-1200.jpg 370w, ./images/portfolio/img-04@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img src="./images/portfolio/img-04-450.jpg" alt="Проект Prime" width="450" height="294" />
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -194,7 +268,24 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-05.jpg" alt="Боксы" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-05@1x-450.jpg 450w, ./images/portfolio/img-05@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-05@1x-768.jpg 354w, ./images/portfolio/img-05@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-05@1x-1200.jpg 370w, ./images/portfolio/img-05@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img src="./images/portfolio/img-05-450.jpg" alt="Проект Boxes" width="450" height="294" />
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -209,7 +300,29 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-06.jpg" alt="Нет границ" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-06@1x-450.jpg 450w, ./images/portfolio/img-06@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-06@1x-768.jpg 354w, ./images/portfolio/img-06@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-06@1x-1200.jpg 370w, ./images/portfolio/img-06@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img
+											src="./images/portfolio/img-06-450.jpg"
+											alt="Inspiration has no Borders"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -224,7 +337,29 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-07.jpg" alt="Лимитед" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-07@1x-450.jpg 450w, ./images/portfolio/img-07@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-07@1x-768.jpg 354w, ./images/portfolio/img-07@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-07@1x-1200.jpg 370w, ./images/portfolio/img-07@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img
+											src="./images/portfolio/img-07-450.jpg"
+											alt="Издание Limited Edition"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -239,7 +374,24 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-08.jpg" alt="Лаб" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-08@1x-450.jpg 450w, ./images/portfolio/img-08@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-08@1x-768.jpg 354w, ./images/portfolio/img-08@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-08@1x-1200.jpg 370w, ./images/portfolio/img-08@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img src="./images/portfolio/img-08-450.jpg" alt="Проект LAB" width="450" height="294" />
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -254,7 +406,24 @@
 						<li class="cards-item cards">
 							<a href="" class="link cards__link">
 								<div class="cards__overlay">
-									<img src="./images/portfolio/project-09.jpg" alt="Рост" width="370" height="294" />
+									<picture>
+										<source
+											srcset="./images/portfolio/img-09@1x-450.jpg 450w, ./images/portfolio/img-09@2x-450.jpg 900w"
+											media="(max-width: 767px)"
+											sizes="(min-width: 480px) 450px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-09@1x-768.jpg 354w, ./images/portfolio/img-09@2x-768.jpg 708w"
+											media="(max-width: 1199px)"
+											sizes="(min-width: 768px) 354px, 100vw"
+										/>
+										<source
+											srcset="./images/portfolio/img-09@1x-1200.jpg 370w, ./images/portfolio/img-09@2x-1200.jpg 740w"
+											media="(min-width: 1200px)"
+											sizes="(min-width: 1200px) 370px, 100vw"
+										/>
+										<img src="./images/portfolio/img-09-450.jpg" alt="Growing Business" width="450" height="294" />
+									</picture>
 									<p class="cards__overlayed">
 										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
 										посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -267,6 +436,261 @@
 							</a>
 						</li>
 					</ul>
+
+					<!-- <ul class="list portfolio-list cards-set">
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-01-354.jpg 354w, 
+										./images/portfolio/img-01-370.jpg 370w,
+										./images/portfolio/img-01-450.jpg 450w,
+										./images/portfolio/img-01-708.jpg 708w,
+										./images/portfolio/img-01-740.jpg 740w,
+										./images/portfolio/img-01-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-01-450.jpg"
+									alt="Технокряк" 
+									width="450" 
+									height="294" />
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Технокряк</h2>
+									<p class="cards__text">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-02-354.jpg 354w, 
+										./images/portfolio/img-02-370.jpg 370w,
+										./images/portfolio/img-02-450.jpg 450w,
+										./images/portfolio/img-02-708.jpg 708w,
+										./images/portfolio/img-02-740.jpg 740w,
+										./images/portfolio/img-02-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-02-450.jpg" 
+									alt="Постер" 
+									width="450" 
+									height="294" />
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Постер New Orlean vs Golden Star</h2>
+									<p class="cards__text">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-03-354.jpg 354w, 
+										./images/portfolio/img-03-370.jpg 370w,
+										./images/portfolio/img-03-450.jpg 450w,
+										./images/portfolio/img-03-708.jpg 708w,
+										./images/portfolio/img-03-740.jpg 740w,
+										./images/portfolio/img-03-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-03-450.jpg" 
+									alt="Ресторан" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Ресторан Seafood</h2>
+									<p class="cards__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-04-354.jpg 354w, 
+										./images/portfolio/img-04-370.jpg 370w,
+										./images/portfolio/img-04-450.jpg 450w,
+										./images/portfolio/img-04-708.jpg 708w,
+										./images/portfolio/img-04-740.jpg 740w,
+										./images/portfolio/img-04-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-04-450.jpg" 
+									alt="Прайм" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Проект Prime</h2>
+									<p class="cards__text">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-05-354.jpg 354w, 
+										./images/portfolio/img-05-370.jpg 370w,
+										./images/portfolio/img-05-450.jpg 450w,
+										./images/portfolio/img-05-708.jpg 708w,
+										./images/portfolio/img-05-740.jpg 740w,
+										./images/portfolio/img-05-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-05-450.jpg" 
+									alt="Боксы" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Проект Boxes</h2>
+									<p class="cards__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-06-354.jpg 354w, 
+										./images/portfolio/img-06-370.jpg 370w,
+										./images/portfolio/img-06-450.jpg 450w,
+										./images/portfolio/img-06-708.jpg 708w,
+										./images/portfolio/img-06-740.jpg 740w,
+										./images/portfolio/img-06-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-06-450.jpg" 
+									alt="Нет границ" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Inspiration has no Borders</h2>
+									<p class="cards__text">Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-07-354.jpg 354w, 
+										./images/portfolio/img-07-370.jpg 370w,
+										./images/portfolio/img-07-450.jpg 450w,
+										./images/portfolio/img-07-708.jpg 708w,
+										./images/portfolio/img-07-740.jpg 740w,
+										./images/portfolio/img-07-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-07-450.jpg" 
+									alt="Лимитед" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Издание Limited Edition</h2>
+									<p class="cards__text">Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-08-354.jpg 354w, 
+										./images/portfolio/img-08-370.jpg 370w,
+										./images/portfolio/img-08-450.jpg 450w,
+										./images/portfolio/img-08-708.jpg 708w,
+										./images/portfolio/img-08-740.jpg 740w,
+										./images/portfolio/img-08-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-08-450.jpg" 
+									alt="Лаб" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Проект LAB</h2>
+									<p class="cards__text">Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="cards-item cards">
+							<a href="" class="link cards__link">
+								<div class="cards__overlay">
+									<img 
+									srcset="
+										./images/portfolio/img-09-354.jpg 354w, 
+										./images/portfolio/img-09-370.jpg 370w,
+										./images/portfolio/img-09-450.jpg 450w,
+										./images/portfolio/img-09-708.jpg 708w,
+										./images/portfolio/img-09-740.jpg 740w,
+										./images/portfolio/img-09-900.jpg 900w
+										" 
+									sizes="(min-width:1200px) 370px, (min-width:768px) 354px, 100vw"
+									src="./images/portfolio/img-09-450.jpg" 
+									alt="Рост" 
+									width="450" 
+									height="294"/>
+									<p class="cards__overlayed">
+										Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+										посетителю получить исчерпывающие сведения о компании или частном лице.
+									</p>
+								</div>
+								<div class="cards__content">
+									<h2 class="cards__title">Growing Business</h2>
+									<p class="cards__text">Приложение</p>
+								</div>
+							</a>
+						</li>
+					</ul> -->
 				</div>
 			</section>
 		</main>
@@ -277,8 +701,7 @@
 				<ul class="list footer__list">
 					<li class="footer__item">
 						<a href="./index.html" class="link logo footer__logo">
-							Web
-							<span class="logo__white">Studio</span>
+							Web<span class="logo__white">Studio</span>
 						</a>
 						<address class="adress">
 							<ul class="list footer-contacts" id="contacts">
