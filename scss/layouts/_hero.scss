@@ -4,21 +4,39 @@
     background-color: $bg-color;
     margin-left: auto;
     margin-right: auto;
-    background-image: $gradient,
-        url(../images/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
-
+@include mq (mob){
+     background-image: $gradient,
+        url(../images/hero/hero-480.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    background-image: $gradient,
+        url(../images/hero/hero-960.jpg);  
+    }
+}
+@include mq (tab){
+    background-image: $gradient,
+        url(../images/hero/hero-768.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    background-image: $gradient,
+        url(../images/hero/hero-1536.jpg);  
+    }
+}
 @include mq(desk){
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-background-image: $gradient,
-        url(../images/main-fon.jpg);}
+    background-image: $gradient,
+        url(../images/hero/hero-1600.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    background-image: $gradient,
+        url(../images/hero/hero-3200.jpg);  
+    }}
+
 }
 
 .hero__title {
