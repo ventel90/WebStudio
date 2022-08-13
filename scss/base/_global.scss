@@ -3,7 +3,10 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $secondary-color;}
+    color: $secondary-color;
+&.modal-open{
+    overflow: hidden;
+}}
 
 h1, h2, h3, ul, p {
     padding: 0;
