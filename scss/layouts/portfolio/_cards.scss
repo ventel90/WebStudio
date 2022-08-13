@@ -1,8 +1,6 @@
 /*SECTION PORTFOLIO CARDS*/
 .cards__link {
-    max-width: 450px;
-@include mq(tab){max-width: 354px;}
-@include mq(desk){max-width: 370px;}
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: $white;
@@ -13,6 +11,7 @@
 }
 
 .cards__content {
+    flex-grow: 1;
     padding: 20px 24px;
     border: $border-card;
 }

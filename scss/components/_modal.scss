@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 101;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity $transition-effect, visibility $transition-effect;
     overflow-y: scroll;
@@ -34,6 +34,10 @@
     transition: transform $transition-effect;
 @include mq(desk){
     max-width: 528px;}
+    // @media screen and (min-height: 480px){
+    //     height: 100%;
+    //     overflow: auto;
+    // }
 }
 
 .close-btn {

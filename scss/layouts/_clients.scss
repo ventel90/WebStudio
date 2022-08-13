@@ -1,10 +1,9 @@
 /*SECTION CLIENTS*/
 
 .clients__list {
-@media screen and (min-width: 480px){
     display: flex;
     flex-wrap: wrap;
-    --cards-item: 2;}
+    --cards-item: 2;
 
 @media screen and (min-width: 768px){
     --cards-item: 3;}
@@ -17,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 29px;
+    padding: 14px 0;
     color: $soc-icon;
     border: 1px solid $soc-icon;
     border-radius: 4px;

@@ -11,12 +11,17 @@
 }
 
 .footer__list {
+@media screen and (max-width: 767px){
+    display: flex;
+    flex-direction: column;
+    gap: 60px;}
 @include mq(tab-only){
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
     justify-content: center;
-    align-items: baseline;
-}
+    }
 @include mq(desk){
     display: flex;
     gap: 70px;
@@ -31,19 +36,16 @@
 
 .footer__logo {
     margin-bottom: 20px;
-    display: block;
-@include mq(tab-only){
-    padding: 0;
-    margin-left: 44px;}
+    display: flex;
+@include mq(noDesk){
+    justify-content: center;
+    margin-right: 0;
+    }
 }
 
 .adress {
     color: $address-color;
     font-style: inherit;
-@include mq (tab-only){
-    margin-right: 165px;
-    margin-bottom: 60px;
-}
 }
 
 .street {
@@ -55,8 +57,8 @@
 }
 
 .footer-contacts{
-@include mq(mob-only){
-    margin-bottom: 60px;}
+// @include mq(mob-only){
+//     margin-bottom: 60px;}
 @include mq(tab-only){
     text-align: center;
 }
@@ -82,8 +84,6 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $white;
-@include mq(mob-only){
-    margin-top: 60px;}
 @include mq(noDesk){
     text-align: center;}
 }
@@ -125,8 +125,8 @@
 
 @include mq(desk){
     width: 358px;
-    margin-right: 12px;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+    margin-right: 12px;}
 
 &:hover, &:focus{
     border-color: $accent-color;}

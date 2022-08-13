@@ -42,27 +42,30 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  display: none;
+  display: flex;
+  flex-direction: column;
   background-color: $white;
+  overflow: auto;
   padding: 48px 40px;
   top: 0;
   left: 0;
+  transform: translateX(100%);
   width: 100%;
   z-index: 99;
 &.is-open {
-      display: block;}
+    transform: translateX(0);}
+  transition: transform $transition-effect;
 @include mq(tab) {
-    display: none;}
+    display: none;} 
 }
 
 .mob-nav{
   color: $primary-color;
-  margin-bottom: 300px;
 }
 
 .mob-nav__item{
   &:not(:last-child){
-  padding-bottom: 32px;}
+  margin-bottom: 32px;}
 }
 
 .mob-nav__link{
@@ -77,12 +80,13 @@
   color: $accent-color;}
 
 .mob-contacts{
-  padding-bottom: 64px;
+margin-top: auto;
+margin-bottom: 64px;
 }
 
 .mob-contacts__item{
   &:not(:last-child){
-  padding-bottom: 32px;}
+  margin-bottom: 30px;}
 }
 
 .mob-contacts__link{

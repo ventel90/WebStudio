@@ -5,10 +5,12 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: $accent-color;
-    padding: 16px 15px 16px 0px;
+    padding: 16px 0px;
 @include mq(tab){
+    padding: 0;
     margin-right: 88px;}
 @include mq(desk) {
+    padding: 0;
     margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;}

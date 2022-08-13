@@ -3,13 +3,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
     margin-bottom: 50px;
+    @include mq(mob-only){
+    row-gap: 8px;
+    column-gap: 15px;}
 }
-.filters__item{
-&:not(:last-child) {
-    margin-right: 8px;}
-}
-
 .filters__button {
     padding: 6px 22px;
     font-family: 'Roboto';
@@ -30,7 +29,5 @@
     background-color: $accent-color;
     box-shadow: $box-shadow-filt-but;}
 
-@include mq(mob-only){
-    margin-bottom: 15px;
-}
+
 }
