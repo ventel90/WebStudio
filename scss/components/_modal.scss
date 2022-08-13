@@ -33,12 +33,15 @@
     box-shadow: $box-shadow-modal;
     border-radius: 4px;
     transition: transform $transition-effect;
-    @media screen and (min-height: 320px){
-    max-height: 100%;
-    overflow: auto;
+
+    @media screen and (min-height: 320px) {
+        max-height: 100%;
+        overflow: auto;
     }
-@include mq(desk){
-    max-width: 528px;}
+
+    @include mq(desk) {
+        max-width: 528px;
+    }
 }
 
 .close-btn {
@@ -60,9 +63,11 @@
     transform: translate(-8px, 8px);
     transition: color $transition-effect;
 
-&:hover, &:focus{
-    color: $accent-color;
-    cursor: pointer;}
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        cursor: pointer;
+    }
 }
 
 .close-btn__icon {
@@ -81,9 +86,10 @@
     line-height: 1.5;
     text-align: center;
     color: $primary-color;
-@include mq(desk){
-    line-height: 1.15;
-}
+
+    @include mq(desk) {
+        line-height: 1.15;
+    }
 }
 
 .modal-form__label {
@@ -115,9 +121,11 @@
     outline: none;
     transition: border-color $transition-effect;
 
-&:hover, &:focus-within{
-    border-color: $accent-color;
-    cursor: pointer;}
+    &:hover,
+    &:focus-within {
+        border-color: $accent-color;
+        cursor: pointer;
+    }
 }
 
 .modal-field__icon {
@@ -129,10 +137,11 @@
     color: $primary-color;
     transition: color $transition-effect;
 
-.modal-field:hover &,
-.modal-field:focus-within &
-{color: $accent-color;
- cursor: pointer;}
+    .modal-field:hover &,
+    .modal-field:focus-within & {
+        color: $accent-color;
+        cursor: pointer;
+    }
 }
 
 .modal-form__comments {
@@ -150,12 +159,15 @@
     letter-spacing: 0.01em;
     transition: border-color $transition-effect;
 
-&::placeholder {
-    color: rgba(117, 117, 117, 0.5);}
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
 
-&:hover, &:focus{
-    border-color: $accent-color;
-    cursor: pointer;}
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        cursor: pointer;
+    }
 }
 
 .modal-form__policy {
@@ -168,10 +180,11 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-@include mq(desk){
-    font-size: 14px;
-    line-height: 1.71;
-}
+
+    @include mq(desk) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
 }
 
@@ -179,4 +192,3 @@
     text-decoration-line: underline;
     color: $accent-color;
 }
-
