@@ -18,6 +18,9 @@
     height: 44px;
     border-radius: 50%;
     transition: color $transition-effect, background-color $transition-effect;
+    .footer &{
+    color: $white;
+    transition: background-color $transition-effect;}
 
     &:hover, &:focus {
     color: $white;

@@ -5,9 +5,8 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
-    @include mq(mob-only){
     row-gap: 8px;
-    column-gap: 15px;}
+    column-gap: 15px;
 }
 .filters__button {
     padding: 6px 22px;

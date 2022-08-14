@@ -3,9 +3,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $bg-color;
-    &.social-list__link {
-    color: $white;
-    transition: background-color $transition-effect;}
 @include mq(mob-only){
     text-align: center;}
 }
